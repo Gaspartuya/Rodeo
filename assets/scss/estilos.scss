@@ -1,0 +1,283 @@
+.margin_top {
+
+    margin-top: 20px;
+}
+
+.text_center {
+
+    text-align: center;
+}
+
+
+
+$ayuda: (
+
+    1: #f2f3eb,
+    2: #c5acac,
+    3: #cfd5b9,
+    4: #e3cccc,
+    5: #b3c398,
+);
+
+@each $preguntas, $color in $ayuda {
+
+    .background_preg#{$preguntas} {
+
+        background-color: $color;
+    }
+
+}
+
+$color: white;
+
+@mixin index ($background-color, $font-family){
+    background-color: $background-color;
+    font-family: $font-family;
+    color: $color;
+    
+}
+
+.index-green {
+    @include index(#b3c398, verdana)
+}
+
+.index-grey {
+    @include index(rgba(128, 128, 128, 0.39), verdana)
+}
+
+.container-index {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.animado-index {
+
+    animation-duration: 3s;
+    animation-name: slidein;
+}
+
+@keyframes slidein {
+    from {
+        margin-left: 100%;
+        width: 300%;
+    }
+
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+
+.animado-ayuda {
+
+    animation-duration: 3s;
+    animation-name: slidein;
+}
+
+@keyframes slidein {
+    from {
+        margin-bottom: 100%;
+        width: 300%;
+    }
+
+    to {
+        margin-bottom: 0%;
+        width: 100%;
+    }
+}
+
+.border-radius {
+
+    border-radius: 200px;
+    width: 300px;
+    height: 300px;
+}
+
+.border {
+    width: 250px;
+    height: 200px;
+
+}
+
+.text-green {
+
+    color: #b3c398;
+}
+
+.text-bold {
+
+    font-weight: bold;
+}
+
+
+
+.menu a span:first-child {
+    display: inline-block;
+    padding: 10px;
+  }
+  
+.font-Helvetica {
+    font-family: Helvetica
+  
+}
+
+@font-face{
+    font-family: finland;
+    src: url(../Fuentes/Finland\ .ttf.ttf);
+}
+
+.font-title {
+
+    font-family: finland;
+    font-size:xx-large;
+    font-weight: bold;
+}
+
+.background-header {
+
+    background-image: url(../img/background/trekking-hiking-backpacking.png);
+   
+}
+
+
+.background-destinos {
+
+    background-image: url(../img/background/3660b4b2-93fa-4265-93fa-fe3ed78d6ef2_alta-libre-aspect-ratio_default_0.jpg);
+
+
+}
+
+.background-ref {
+
+    background-image: url(../img/background/visore-trekking.jpg);
+}
+
+.background-cont {
+
+    background-image: url(../img/background/slider\ 2\ \(1\).jpg);
+}
+
+.background_campo {
+
+    background-image: url(../img/destinos/Campo.jpg);
+}
+.float-l {
+
+    float: left;
+
+}
+
+.float-r {
+
+    float: right;
+}
+
+
+.background {
+
+    background-color: white;
+   
+}
+
+.margin {
+
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+
+.text_rigth {
+
+    justify-content: right;
+}
+
+.background_white {
+
+    background-color: rgba(245, 245, 245, 0.288);
+}
+
+.center {
+
+    justify-content: center;
+    align-items: center;
+}
+
+.margin_contacto {
+
+    margin: 100px 200px 100px 200px;
+}
+
+.background_form {
+
+    background-color: #f4f3ef80;
+}
+
+
+
+.text-black {
+
+    color: black;
+}
+
+.padding-left {
+
+    padding-left: 100px;
+}
+
+@media (max-width:500px) {
+    .padding-left {
+        padding-left: 0px;
+        }
+}
+
+.text-header {
+
+    font-size: x-large;
+    color: #9e7d6a;
+}
+
+.margin-top2 {
+
+    margin-top: 70px;
+}
+
+.text-navbar {
+
+    color: black;
+}
+
+.text-navbar:hover {
+
+    background-color: white;
+    
+}
+
+.text-big {
+    font-size: 80px;
+}
+
+.padding-rigth {
+
+    padding-right: 420px;
+}
+
+.finland {
+
+    font-family: finland;
+    font-size: xx-large;
+}
+
+.btn-outline-light:hover {
+
+    background-color: white;
+}
+
+.boton {
+
+    background-color: black;
+}
+
+
+
