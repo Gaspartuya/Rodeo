@@ -7,15 +7,15 @@
 }
 
 .background_preg1 {
-  background-color: #f2f3eb;
+  background-color: #4472C4;
 }
 
 .background_preg2 {
-  background-color: #c5acac;
+  background-color: #C00000;
 }
 
 .background_preg3 {
-  background-color: #cfd5b9;
+  background-color: #9DC3E6;
 }
 
 .background_preg4 {
@@ -155,6 +155,7 @@
   float: right;
 }
 
+
 .background {
   background-color: white;
 }
@@ -212,7 +213,7 @@
 }
 
 .text-navbar:hover {
-  background-color: white;
+  background-color: whitesmoke;
 }
 
 .text-big {
@@ -229,7 +230,7 @@
 }
 
 .btn-outline-light:hover {
-  background-color: white;
+  background-color: #4472C4;
 }/*# sourceMappingURL=estilos.css.map */
 
 .background_campo {
