@@ -78,8 +78,8 @@ function recuperarCarrito() {
 $("#agregar-producto").click(function(){
     Swal.fire({
         title: 'Sweet!',
-        text: 'Modal with a custom image.',
-        imageUrl: "../img/destinos/png-transparent-positive-cows-dairy-cow-livestock-dairy-cattle.png",
+        text: 'Agregará una nueva vaca',
+        imageUrl: "../img/destinos/vaquita",
         imageWidth: 400,
         imageHeight: 200,
         imageAlt: 'Custom image',
