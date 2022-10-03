@@ -30,6 +30,8 @@ function cargarProductos(array) {
                     </tr>`
                     tabla.innerHTML += fila
         })
+
+        
 } 
 cargarProductos(Animales)
 
@@ -72,3 +74,14 @@ function recuperarCarrito() {
         carrito = JSON.parse(localStorage.getItem("carrito"))
     }
 }
+
+$("#agregar-producto").click(function(){
+    Swal.fire({
+        title: 'Sweet!',
+        text: 'Modal with a custom image.',
+        imageUrl: "../img/destinos/png-transparent-positive-cows-dairy-cow-livestock-dairy-cattle.png",
+        imageWidth: 400,
+        imageHeight: 200,
+        imageAlt: 'Custom image',
+      })
+});
