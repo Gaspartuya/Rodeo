@@ -79,7 +79,7 @@ $("#agregar-producto").click(function(){
     Swal.fire({
         title: 'Sweet!',
         text: 'Agregará una nueva vaca',
-        imageUrl: "../img/destinos/vaquita",
+        imageUrl: "../img/destinos/vaquita.jpg",
         imageWidth: 400,
         imageHeight: 200,
         imageAlt: 'Custom image',
