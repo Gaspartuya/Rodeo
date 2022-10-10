@@ -1,38 +1,7 @@
-const IVA = 1.21
 const Animales = []
 const carrito = []
 
-function generadorAutomatico() {
-    Animales.push(new Animal("vaca","LN738", "532", "CARETA", "VIEJA", "0"))
-    Animales.push(new Animal("vaca","LN738", "813", "COLORADA", "VIEJA","0"))
-    Animales.push(new Animal("vaca","LN738", "818", "CARETA-COL", "VIEJA","8"))
-    Animales.push(new Animal("vaca","LN738", "805", "NEGRA", "VIEJA","9"))
-    Animales.push(new Animal("vaca","LN738", "526", "CARETA", "VIEJA","0"))
-    Animales.push(new Animal("vaca","LN738", "535", "CARETA", "VIEJA","0"))
-    Animales.push(new Animal("vaca","LN738", "539", "COLORADA", "VIEJA","0"))
-}
-
-
-generadorAutomatico()
-
-function cargarProductos(array) {
-    let fila = ""
-        tabla.innerHTML = ""
-        array.forEach(Animal => {
-            fila = `<tr>
-                        <td>${Animal.tipo}</td>
-                        <td>${Animal.codigo}</td>
-                        <td>${Animal.numero}</td>
-                        <td>${Animal.raza}</td>
-                        <td>${Animal.edad}</td>
-                        <td>${Animal.tiempoDeEmbarazo} meses </td>
-                        <td><button id="btn${Animal.numero}">+</button></td>
-                    </tr>`
-                    tabla.innerHTML += fila
-        })
-
-        
-} 
+ 
 cargarProductos(Animales)
 
 const inputFiltrar = document.querySelector("input")

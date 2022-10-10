@@ -1,0 +1,31 @@
+[
+    {
+    "Tipo": "vaca",
+    "Numero": 532,
+    "Raza": "CARETA",
+    "edad": 3,
+    "TiempoDeEmbarazo": 0
+    },
+        {
+    "Tipo": "vaca",
+    "Numero": 813,
+    "Raza": "CARETA-COL",
+    "edad": 3,
+    "TiempoDeEmbarazo": 8
+    },
+        {
+    "Tipo": "vaca",
+    "Numero": 805,
+    "Raza": "NEGRA",
+    "edad": 4,
+    "TiempoDeEmbarazo": 9
+    },
+        {
+    "Tipo": "vaca",
+    "Numero": 539,
+    "Raza": "COLORADA",
+    "edad": 5,
+    "TiempoDeEmbarazo": 0
+    }
+
+]
