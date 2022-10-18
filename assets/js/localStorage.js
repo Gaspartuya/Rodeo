@@ -8,9 +8,9 @@ const btnAgregar = document.querySelector("#btnAgregar")
 
 
 
-function guardarDatos(){
+function guardarDatos(e){
 
-
+    e.preventDefault();
     localStorage.setItem("tipo",inputTipo.value)
     localStorage.setItem("codigo",inputCodigo.value)
     localStorage.setItem("numero",inputNumero.value)
@@ -20,15 +20,7 @@ function guardarDatos(){
    
         
 
-    $("#btnAgregar").click(function(){
-        Swal.fire({
-            position: 'top-end',
-            icon: 'success',
-            title: 'Animal agregado con éxito',
-            showConfirmButton: false,
-            timer: 1500
-          })
-    });
+
 
 
     const newAnimal = {
@@ -53,6 +45,16 @@ function guardarDatos(){
 }
 
 btnAgregar.addEventListener("click",guardarDatos)
+
+$("#btnAgregar").click(function(){
+    Swal.fire({
+        position: 'top-end',
+        icon: 'success',
+        title: 'Animal agregado con éxito',
+        showConfirmButton: false,
+        timer: 1500
+      })
+});
 
 
 

@@ -1,56 +1,41 @@
-const Animales = []
-const carrito = []
 
- 
-cargarProductos(Animales)
+const updateCart = (cart) =>
+{
+    let cartContainer = document.querySelector('#renglon');
 
-const inputFiltrar = document.querySelector("input")
+    let container = document.getElementById('tabla');
+        if (container)
+            {
+                container.parentNode.removeChild(container);
+                
+            }
+            let div = document.createElement('div');
+            div.setAttribute('id','tabla')
+            div.innerHTML += '<h2>carrito de compras</h2>';
+            for (const Animal of cart)
+             {
+                div.innerHTML += `
+                <tbody class=vaca id="tabla">
+                <tr id="renglon">
+                    <td> TIPO:${Animal.Tipo}</td>
+                    <td> NUMERO:${Animal.Numero}</td>
+                    <td> RAZA:${Animal.Raza}</td>
+                    <td> EDAD:${Animal.edad}</td>
+                    <td> TIEMPO DE EMBARAZO;${Animal.TiempoDeEmbarazo}</td>
+                    <td><button id="boton${Numero}">+</button></td>
+                </tr>
+            </tbody
+                 `
+                
+             }
 
-function filtrarProductos() { 
-    inputFiltrar.value = inputFiltrar.value.trim().toUpperCase()
-    if (inputFiltrar.value !== "") {
-        const resultado = Animales.filter(Animal => Animal.numero.includes(inputFiltrar.value))
-              if (resultado.length === 0) {
-                console.clear()
-                console.warn("No se encontraron productos.")
-                cargarProductos(Animales)
-              } else {
-                cargarProductos(resultado)
-              }
-    } else {
-        cargarProductos(Animales)
-    }
-}
+             cartContainer.appendChild(div);
 
-inputFiltrar.addEventListener("input", filtrarProductos) 
+            }
 
-function eventoEnBotones() {
-    Animales.forEach(prod => {
-        const btn = document.querySelector(`#btn${prod.numero}`)
-              btn.addEventListener("click", ()=> agregarAlCarrito(`${prod.numero}`))
-    })
-}
-eventoEnBotones()
+            const shopcart = json.parse(localStorage.getItem('cart')) || []
+            updateCart(shopcart)
 
-function agregarAlCarrito(numero) {
-    const Animal = Animales.find(prod => prod.numero == numero)
-          carrito.push(Animal)
-          localStorage.setItem("carrito", JSON.stringify(carrito))
-}
 
-function recuperarCarrito() {
-    if (localStorage.getItem("carrito")) {
-        carrito = JSON.parse(localStorage.getItem("carrito"))
-    }
-}
 
-$("#agregar-producto").click(function(){
-    Swal.fire({
-        title: 'Sweet!',
-        text: 'Agregará una nueva vaca',
-        imageUrl: "../img/destinos/vaquita.jpg",
-        imageWidth: 400,
-        imageHeight: 200,
-        imageAlt: 'Custom image',
-      })
-});
+

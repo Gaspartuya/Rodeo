@@ -236,6 +236,7 @@
 .background_campo {
 
   background-image: url(../img/destinos/campo.jpg);
+  background-size: cover;
 }
 
 .venta {
