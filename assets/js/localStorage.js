@@ -1,5 +1,4 @@
 const inputTipo = document.querySelector("#inputTipo")
-const inputCodigo = document.querySelector("#inputCodigo")
 const inputNumero = document.querySelector("#inputNumero")
 const inputRaza = document.querySelector("#inputRaza")
 const inputEdad = document.querySelector("#inputEdad")
@@ -12,10 +11,9 @@ function guardarDatos(e){
 
     e.preventDefault();
     localStorage.setItem("tipo",inputTipo.value)
-    localStorage.setItem("codigo",inputCodigo.value)
     localStorage.setItem("numero",inputNumero.value)
     localStorage.setItem("raza",inputRaza.value)
-    localStorage.setItem("edad",inputEdad.value)
+    localStorage.setItem("nacimiento",inputEdad.value)
     localStorage.setItem("tiempo de embarazo",inputTiempoDeEmbarazo.value)
    
         
@@ -26,10 +24,9 @@ function guardarDatos(e){
     const newAnimal = {
 
             "tipo": inputTipo.value,
-            "codigo": inputCodigo.value,
             "numero": inputNumero.value,
             "raza": inputRaza.value,
-            "edad": inputEdad.value,
+            "nacimiento": inputEdad.value,
             "tiempo de embarazo": inputTiempoDeEmbarazo.value
            
         }

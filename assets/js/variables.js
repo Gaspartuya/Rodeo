@@ -1,11 +1,10 @@
 class Animal {
-    constructor(tipo, codigo, numero, raza, edad, tiempoDeEmbarazo) {
-        this.tipo = tipo
-        this.codigo = codigo
-        this.numero = numero
-        this.raza = raza
+    constructor(Tipo, Numero, Raza, edad, TiempoDeEmbarazo) {
+        this.Tipo = Tipo
+        this.numero = Numero
+        this.Raza = Raza
         this.edad = edad
-        this.tiempoDeEmbarazo = tiempoDeEmbarazo
+        this.TiempoDeEmbarazo = TiempoDeEmbarazo
     }
     precioFinal () {
         return "$ " + parseFloat ((this.importe * IVA).toFixed(2))
