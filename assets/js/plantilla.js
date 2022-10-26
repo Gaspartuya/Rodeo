@@ -48,7 +48,7 @@ const mostrarVacas = (Animales) =>
                     <td>${Raza}</td>
                     <td>${edad}</td>
                     <td>${TiempoDeEmbarazo}</td>
-                    <td><button id='btn${Numero}'>Vender</button></td>
+                    <td><button id='btn${Numero}' class="font-Helvetica text_form margin_top btn btn-outline-light btn-floating m-1 text-black background_black">Vender</button></td>
                 </tr>
             </tbody>`
     });
@@ -61,7 +61,10 @@ const cargarContenido = async () =>
     {
         const response = await fetch ('../js/vacas.json')
         const data = await response.json()
-            Animales.push(...data)
+            Animales.push(...data);
+            const purchasedAnimals = JSON.parse (localStorage.getItem('nuevos_animales')) || [];
+            console.log(purchasedAnimals);
+            Animales.push(...purchasedAnimals);
             mostrarVacas(Animales);
     } 
     catch (error) 

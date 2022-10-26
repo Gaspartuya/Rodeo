@@ -15,20 +15,18 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
     <link rel="stylesheet" href="../scss/estilos.css">
-    <link rel="shorcut icon" href="./assets/img/logos/Logo-removebg-preview.png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="shorcut icon" href="../img/destinos/Vaca.jpg">
     <link rel="stylesheet" href="../scss/animate.css">
+    <link rel="stylesheet" href="../scss/estilos.scss">
  
   
   </head>
   <body class="background_campo">
    
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script defer src="../js/Ventas.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
-    <script src="https://kit.fontawesome.com/c6e162fd7c.js" crossorigin="anonymous"></script>
-    <script src="../js/wow.min.js"></script>
-    <script>new WOW().init();</script>
+
+
     
     
     <header>
@@ -46,6 +44,12 @@
           
             <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
               <ul class="navbar-nav text-header">
+                <li class="nav-item active padding-left">
+                  <a class="nav-link font-title text-navbar" href="../../index.html">INICIO<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active padding-left">
+                  <a class="nav-link font-title text-navbar" href="./Vacas.html">VACAS<span class="sr-only">(current)</span></a>
+                </li>
                   <li class="nav-item active padding-left">
                     <a class="nav-link font-title text-navbar" href="./Agregar.html">COMPRAS<span class="sr-only">(current)</span></a>
                   </li>
@@ -59,11 +63,12 @@
         </div>
           </div>
         </header>
+        <br>
+        <br>
 
-        <section id="cart"></section>
-        <table id="cartContainer" class="table table-bordered background">
+        <table id="cartContainer" class="table vacas table-bordered background">
           <thead>
-            <tr>
+            <tr class="vaca">
               <th>TIPO</th>
               <th>N°</th>
               <th>RAZA</th>
@@ -71,17 +76,7 @@
               <th>TIEMPO DE EMBARAZO</th>
             </tr>
           </thead>
-          <tbody class="vaca"  id="tabla">
-            <tr id="renglon">
-              <td>Tipo</td>
-              <td>Numero</td>
-              <td>Raza</td>
-              <td>Edad</td>
-              <td>TiempoDeEmbarazo</td>
-
-            </tr>
-
-          </tbody>
         </table>
+
 
 </html>

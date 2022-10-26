@@ -10,35 +10,21 @@ const btnAgregar = document.querySelector("#btnAgregar")
 function guardarDatos(e){
 
     e.preventDefault();
-    localStorage.setItem("tipo",inputTipo.value)
-    localStorage.setItem("numero",inputNumero.value)
-    localStorage.setItem("raza",inputRaza.value)
-    localStorage.setItem("nacimiento",inputEdad.value)
-    localStorage.setItem("tiempo de embarazo",inputTiempoDeEmbarazo.value)
    
-        
+    const newAnimal = 
+    {
 
-
-
-
-    const newAnimal = {
-
-            "tipo": inputTipo.value,
-            "numero": inputNumero.value,
-            "raza": inputRaza.value,
-            "nacimiento": inputEdad.value,
-            "tiempo de embarazo": inputTiempoDeEmbarazo.value
+        "Tipo": inputTipo.value,
+        "Numero": inputNumero.value,
+        "Raza": inputRaza.value,
+        "edad": inputEdad.value,
+        "TiempoDeEmbarazo": inputTiempoDeEmbarazo.value
            
-        }
+    }
 
-
-
-        
-    localStorage.setItem("nuevos_animales", newAnimal)
-
-
-
-
+    const purchasedAnimals = JSON.parse (localStorage.getItem('nuevos_animales')) || [];
+    purchasedAnimals.push(newAnimal);    
+    localStorage.setItem("nuevos_animales", JSON.stringify(purchasedAnimals));
 }
 
 btnAgregar.addEventListener("click",guardarDatos)

@@ -1,6 +1,9 @@
 .margin_top {
   margin-top: 20px;
 }
+.margin_left {
+  margin-left: 100px;
+}
 
 .text_center {
   text-align: center;
@@ -245,3 +248,12 @@
   color: white;
 }
 
+.vaca {
+
+  text-align: center;
+}
+
+.background_black {
+
+  background-color: rgba(196, 182, 182, 0.584);
+}

@@ -1,31 +1,52 @@
 [
     {
-    "Tipo": "vaca",
-    "Numero": "532",
-    "Raza": "CARETA",
-    "edad": 3,
-    "TiempoDeEmbarazo": 0
+        "Tipo": "VACA",
+        "Numero": "532",
+        "Raza": "CARETA",
+        "edad": 3,
+        "TiempoDeEmbarazo": 0
     },
-        {
-    "Tipo": "vaca",
-    "Numero": "813",
-    "Raza": "CARETA-COL",
-    "edad": 3,
-    "TiempoDeEmbarazo": 8
+    {
+        "Tipo": "VACA",
+        "Numero": "813",
+        "Raza": "CARETA",
+        "edad": 3,
+        "TiempoDeEmbarazo": 8
     },
-        {
-    "Tipo": "vaca",
-    "Numero": "805",
-    "Raza": "NEGRA",
-    "edad": 4,
-    "TiempoDeEmbarazo": 9
+    {
+        "Tipo": "VACA",
+        "Numero": "805",
+        "Raza": "NEGRA",
+        "edad": 4,
+        "TiempoDeEmbarazo": 9
     },
-        {
-    "Tipo": "vaca",
-    "Numero": "539",
-    "Raza": "COLORADA",
-    "edad": 5,
-    "TiempoDeEmbarazo": 0
+    {
+        "Tipo": "VACA",
+        "Numero": "539",
+        "Raza": "COLORADA",
+        "edad": 5,
+        "TiempoDeEmbarazo": 0
+    },
+    {
+        "Tipo": "VACA",
+        "Numero": "314",
+        "Raza": "COLORADA",
+        "edad": 1,
+        "TiempoDeEmbarazo": 4
+    },
+    {
+        "Tipo": "VACA",
+        "Numero": "817",
+        "Raza": "NEGRA",
+        "edad": 7,
+        "TiempoDeEmbarazo": 0
+    },
+    {
+        "Tipo": "VACA",
+        "Numero": "443",
+        "Raza": "CARETA",
+        "edad": 2,
+        "TiempoDeEmbarazo": 6
     }
 
 ]
